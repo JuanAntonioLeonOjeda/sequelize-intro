@@ -4,7 +4,7 @@
 //   host: 'localhost',
 //   user: 'juanan',
 //   database: 'Twitter',
-//   password: 'Puffin_88'
+//   password: 'myPassword'
 // });
 
 // // simple query
@@ -19,7 +19,7 @@
 require('dotenv').config()
 const { Sequelize } = require('sequelize')
 
-const sequelize = new Sequelize(process.env.DATABASE, 'juanan', 'Puffin_88', {
+const sequelize = new Sequelize(process.env.DATABASE, 'juanan', 'myPassword', {
   host: 'localhost',
   dialect: 'mysql',
   logging: false
